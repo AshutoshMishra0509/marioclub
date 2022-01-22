@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Prompt:wght@100&display=swap');
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+}
+   header{ 
+    background-color:#6246ea;
+    text-align: center;
+    padding: 20px ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header h1{
+    color: azure;
+    background-color: blue;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+    
+}
+.banner .welcome{
+    background-color:rgb(84, 82, 214);
+    color: azure;
+    padding: 30px;
+    position: absolute;
+    opacity: 1;
+    left: 0;
+    top: 30%;
+    border-style: outset;
+    margin: 20px;
+    animation-name: example;
+    animation-duration: 20s;
+}
+@keyframes example {
+    0% {background-color: rgb(84,82,214);}
+    12.5%{background-color: blue;}
+    25%{background-color: cadetblue;}
+    37.5%{background-color: cornflowerblue;}
+    50%{background-color: darkseagreen;}
+    62.5%{background-color: greenyellow;}
+    75%{background-color:yellow;}
+    87.5%{background-color: orange;}
+    100%{background-color: orangered;}
+}
+.banner h2{
+    font-size: 74px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+/* nav{ 
+    background-color: #f4f4f4;
+    padding: 15px;
+    position: sticky;
+    top: 100px;
+}*/
+/* nav ul{ 
+    white-space: nowrap;
+    max-width: 1200px;
+    margin:0 auto;
+    
+}*/
+/*nav li{
+    
+    display: inline-block;
+    width: 25%;
+    font-size: 24px;
+}*/
+/* nav li a{                         
+    text-decoration: none;
+    color: darkblue;
+    font-family:'Prompt', sans-serif ;
+    font-weight: bold;
+}*/
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #ff6e6c;
+    font-size: 48px;
+}
+article p{
+    line-height: 2em;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.join{
+    background: #e2daeb;
+    text-align: center;
+    padding: 60px 20px;
+}
+.join h2{
+    font-family:'Outfit', sans-serif ;
+    font-weight: bolder;
+    font-size: 40px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+footer{
+    background-color: #faae2b;
+    text-align: center;
+    padding: 10px;
+}
+nav{
+    position: sticky;
+    top: 100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }  
+
+/* pseudo classes */
+nav li a:hover{
+    background-color: #111;
+    
+}
+.active{
+    background-color: #4ca;
+}
+.images li:hover{
+    position: relative;
+    top: -4px;
+
+}
+article p::first-letter{
+    font-size: 40px;
+}
+/* responsive styles */
+@media screen and (max-width: 1400px){
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 960px){
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 700px){
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        margin: 0px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 560px){
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
